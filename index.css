@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(245, 245, 245, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('洞穴.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding: 20px 0;
+  font-family: '微软雅黑';
+  color: #fff;
+}
+
+.container1 {
+  position: absolute;
+  top: 80px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-blend-mode: multiply;
+}
+
+.container2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-blend-mode: multiply;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container3 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-blend-mode: multiply;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.audio-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#audio-backgroundMusic {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* 游戏历史容器样式 */
+.history-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 300px;
+}
+
+/* 单个游戏历史项样式 */
+.history-item {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
